@@ -23,7 +23,7 @@ A full-stack Java web application built with Spring Boot where users guess a ran
 ### Using IntelliJ IDEA
 1. Open project
 2. Run `NumberGuessingGameWebApplication.java`
-3. Open browser: [http://localhost:8080](http://localhost:8080)
+3. Open browser: [http://localhost:7676](http://localhost:7676)
 
 ### Using Terminal
 ```bash
