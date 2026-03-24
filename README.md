@@ -28,3 +28,11 @@ A full-stack Java web application built with Spring Boot where users guess a ran
 ### Using Terminal
 ```bash
 mvn spring-boot:run
+
+## 📌 Future Improvements
+- Implement a leaderboard system  
+- Add a countdown timer  
+- Introduce multiplayer functionality  
+
+## 👩‍💻 Author
+Developed by Terissa. Feel free to contribute or suggest improvements!
