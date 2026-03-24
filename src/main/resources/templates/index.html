@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" dir="ltr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div class="container">
+
+    <h1>🎯 Number Guessing Game</h1>
+
+    <p th:text="${message}"></p>
+    <p>Attempts: <span th:text="${attempts}"></span></p>
+
+    <!-- Guess Form -->
+    <form th:action="@{/guess}" method="post">
+        <input type="number" name="guess" th:attr="min=1, max=${maxRange}" required>
+        <button type="submit">Guess</button>
+    </form>
+
+    <!-- Restart Button -->
+    <form th:action="@{/restart}" method="post">
+        <button type="submit">🔄 Restart</button>
+    </form>
+
+    <!-- Difficulty -->
+    <div class="difficulty">
+        <p>Difficulty:</p>
+        <form th:action="@{/difficulty}" method="post">
+            <button name="range" value="50">Easy (1–50)</button>
+            <button name="range" value="100">Medium (1–100)</button>
+            <button name="range" value="500">Hard (1–500)</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
